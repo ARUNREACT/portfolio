@@ -79,7 +79,7 @@ export function Dashboard() {
             <a
               data-aos="zoom-in"
               className="mt-3 cv d-block d-sm-none"
-              href={require("../../asset/Arun Kumar React JS Resume.b095d5a53456f2651402 (1).png")}
+              href={require("../../asset/Arun Kumar React JS Resume.png")}
               download
             >
               <button>Download CV</button>
