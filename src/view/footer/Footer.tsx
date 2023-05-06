@@ -1,32 +1,17 @@
 import "../footer/Footer.css";
 
-// export function Option(props: any) {
-//   return (
-//     <div className="d-flex flex-column option">
-//       <h5 className="p-0 ">{props.h5}</h5>
-//       <span></span>
-//       <a href={props.a1href}>{props.a1name}</a>
-//       <a href={props.a2href}>{props.a2name}</a>
-//       <a href={props.a3href}>{props.a3name}</a>
-//       <a href={props.a4href}>{props.a4name}</a>
-//       <a href={props.a5href}>{props.a5name}</a>
-//     </div>
-//   );
-// }
 export function Icon(props: any) {
   return (
-    // <p className="d-flex icon">
     <a href={props.href}>
       <i className={props.icon}></i>
     </a>
-    // </p>
   );
 }
 
 export function Footer() {
   return (
     <div className="main-footer bg-light py-5">
-      <div className="col-md-9 col-lg-7 col-xl-6 mx-auto pt-3">
+      <div className="col-md-9 col-lg-7 col-xl-6 mx-auto pt-3 p-0">
         <div className="footer-img">
           <img src={require("../../asset/logo.png")} alt="" />
           <h2>Arun</h2>
@@ -45,7 +30,7 @@ export function Footer() {
             <a href="#contact">Contact</a>
           </div>
         </div>
-        <div className="social-links my-4">
+        <div className="social-links my-4 ">
           <a
             target="_blank"
             href="https://www.linkedin.com/in/arun-kumar-287995227/"

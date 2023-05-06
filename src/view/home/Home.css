@@ -40,15 +40,16 @@
 .about a {
   text-decoration: none;
 }
-.text a,
-.cv,
+.text a button,
+.cv button,
 .mailbtn {
   text-decoration: none;
-  padding: 10px 15px;
+  height: 40px;
+  min-width: 140px;
+  /* padding: 10px 15px; */
   border-radius: 50px;
   border: none;
   font-size: calc(0.4.5rem + 0.6vw);
-
   background-color: #992b8b;
   color: white;
   letter-spacing: 1px;
@@ -56,6 +57,7 @@
   box-shadow: rgba(0, 0, 0, 0.473) 0px 20px 20px -17px;
   transition: all 0.8s;
 }
+
 .text a:hover,
 .cv:hover,
 .parent-form a:hover,

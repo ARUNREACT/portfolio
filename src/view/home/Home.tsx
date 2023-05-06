@@ -15,7 +15,9 @@ export function Dashboard() {
             <h1>I am Arun</h1>
             <p className="mb-3">Fronted Web Developer</p>
 
-            <a href="#work">Visit my works</a>
+            <a href="#work">
+              <button>Visit my works</button>
+            </a>
           </div>
         </div>
 
@@ -59,7 +61,7 @@ export function Dashboard() {
               href={require("../../asset/Arun Kumar React JS Resume.pdf")}
               download
             >
-              Download CV
+              <button>Download CV</button>
             </a>
           </div>
         </div>
@@ -247,9 +249,11 @@ export function Dashboard() {
                 </div>
               </div>
               <div className="col-12 bg-inf p-4 mailsend">
-                <input className="mailbtn" type="submit" value="Send Message">
-                  {/* Send Message */}
-                </input>
+                <input
+                  className="mailbtn"
+                  type="submit"
+                  value="Send Message"
+                ></input>
               </div>
             </form>
           </div>
