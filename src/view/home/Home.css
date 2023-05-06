@@ -57,9 +57,8 @@
   transition: all 0.8s;
 }
 
-.text a:hover,
-.cv:hover,
-.parent-form a:hover,
+.text a button:hover,
+.cv button:hover,
 .mailbtn:hover {
   background-color: #e25238;
 }

@@ -63,6 +63,13 @@ export function Dashboard() {
             >
               <button>Download CV</button>
             </a>
+            <a
+              className="mt-5 cv"
+              href={require("../../asset/Arun Kumar React JS Resume.b095d5a53456f2651402 (1).png")}
+              download
+            >
+              <button>Download CV</button>
+            </a>
           </div>
         </div>
 
