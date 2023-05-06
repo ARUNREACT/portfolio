@@ -59,7 +59,8 @@ export function Dashboard() {
             <a
               className="mt-5 cv"
               href={require("../../asset/Arun Kumar React JS Resume.pdf")}
-              download
+              // download
+              download="optional-value"
             >
               <button>Download CV</button>
             </a>
