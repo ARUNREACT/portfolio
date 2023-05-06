@@ -1,0 +1,496 @@
+.main {
+  background-color: #ffffff;
+}
+.main-img {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center 20%;
+
+  background-size: cover;
+  background-image: url("../../asset/home.jpg");
+  background-color: #43759414;
+  background-blend-mode: luminosity;
+}
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;700&family=Roboto&display=swap");
+
+.text h1,
+.text h2,
+.parent-form h2 {
+  font-family: "Baloo Paaji 2", cursive;
+  font-size: calc(3rem + 3vw);
+  font-weight: 900;
+  opacity: 0.8;
+  color: #212529;
+  letter-spacing: 2px;
+  padding: 0;
+  margin: 0;
+}
+
+.text h2 {
+  font-size: calc(2rem + 2.5vw);
+}
+.text p {
+  font-size: calc(1rem + 1vw);
+
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+.about a {
+  text-decoration: none;
+}
+.text a,
+.cv,
+.mailbtn {
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 50px;
+  border: none;
+  font-size: calc(0.4.5rem + 0.6vw);
+
+  background-color: #992b8b;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.473) 0px 20px 20px -17px;
+  transition: all 0.8s;
+}
+.text a:hover,
+.cv:hover,
+.parent-form a:hover,
+.mailbtn:hover {
+  background-color: #e25238;
+}
+
+.about {
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 8% 0%;
+}
+.about img {
+  width: 430px;
+}
+.about p {
+  margin-top: 20px;
+}
+.about h5 {
+  font-weight: 400;
+  font-size: 18px;
+  color: #212529;
+}
+.about span {
+  color: rgb(11, 170, 255);
+}
+.about h1,
+.project-phase-h1,
+.parent-skill-set h1,
+.works h1,
+.parent-form h2 {
+  font-family: "Baloo Paaji 2", cursive;
+  font-size: calc(2rem + 2vw);
+  text-align: center;
+  font-weight: 900;
+
+  color: #992b8b;
+}
+.parent-form h2 {
+  font-size: calc(2rem + 1vw);
+}
+.about h1 {
+  text-align: start;
+}
+.about p {
+  font-family: "Baloo Paaji 2", cursive;
+}
+
+.works h2 {
+  font-family: "Baloo Paaji 2", cursive;
+  font-size: calc(1rem + 1vw);
+  color: black;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+/**************.project-phase*******************  */
+.main-project-phase {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-back {
+  position: absolute;
+  z-index: -1;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  opacity: 0.5;
+  background-image: url(https://slidescorner.com/wp-content/uploads/2022/09/01-Heidi-Pastel-Abstract-Organic-Shapes-Background-by-SlidesCorner.jpg);
+}
+.mainss {
+  position: relative;
+  z-index: 1;
+}
+.project-phase {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-phase-child {
+  margin-top: 25px;
+  min-width: 200px;
+  height: 150px;
+  border-radius: 25px;
+  text-align: center;
+}
+.project-phase .project-phase-child:nth-child(1) {
+  background-color: #b8e3ff;
+}
+.project-phase .project-phase-child:nth-child(3) {
+  background-color: #efc6ff;
+}
+.project-phase .project-phase-child:nth-child(5) {
+  background-color: #ff9a8f;
+}
+.project-phase-child h4 {
+  font-family: "Baloo Paaji 2", cursive;
+  font-weight: 900;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+}
+.project-phase-img {
+  width: 130px;
+  margin-top: -50px;
+}
+.project-phase .arrow {
+  width: 130px;
+  padding: 10px;
+  animation: arrow 3s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateX(-20px) rotate(180deg);
+  }
+  100% {
+    transform: translateX(25px) rotate(180deg);
+  }
+}
+@media screen and (max-width: 832px) {
+  .project-back {
+    background-position: center right;
+    min-height: 170vh;
+  }
+  .works-back {
+  }
+  .project-phase {
+    flex-direction: column !important;
+  }
+  .project-phase div {
+    margin: 70px 0px 40px 0px;
+  }
+
+  @keyframes arrow {
+    0% {
+      transform: translateY(-20px) rotate(270deg);
+    }
+    100% {
+      transform: translateY(20px) rotate(270deg);
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .project-phase .arrow {
+    width: 100px !important;
+  }
+}
+@media screen and (max-width: 980px) {
+  .main-works {
+    min-height: 160vh !important;
+  }
+  .works-back {
+    min-height: 160vh !important;
+  }
+}
+
+.parent-skill-set {
+  background-color: #000000;
+  padding: 5% 0%;
+}
+
+.skills-img img {
+  width: 80px;
+}
+.parent-skill-set h4 {
+  color: #21d3fffe;
+}
+.container {
+  padding: 0;
+  margin: 0;
+}
+.progress2 {
+  height: 32px;
+  position: relative;
+  padding: 6px;
+  border-radius: 30px;
+  background: rgba(14, 14, 14, 0.25);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25),
+    0 1px rgba(255, 255, 255, 0.08);
+  color: white;
+  box-shadow: #ffffff70 2px 0px 5px 2px inset;
+}
+
+.progress-moved {
+  position: relative;
+  z-index: 1;
+}
+.progress-moved p {
+  padding: 0;
+  margin-top: -3px;
+  text-align: center;
+  font-weight: 700;
+}
+.progress-moved p:nth-child(2) {
+  font-weight: 500;
+  color: white;
+  margin-left: -8px;
+}
+.html,
+.css,
+.sass,
+.bootstrap,
+.media,
+.seo,
+.js,
+.ts {
+  position: absolute;
+  z-index: -1;
+  height: 19px;
+  margin-top: 1px;
+  border-radius: 30px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.05)
+  );
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+  background-color: #992b8b;
+}
+.html,
+.bootstrap {
+  width: 80%;
+  animation: html 6s;
+}
+@keyframes html {
+  0% {
+    width: 5%;
+    background-color: #f9bcca;
+  }
+  100% {
+    width: 80%;
+    background-color: #ef476f;
+  }
+}
+.css,
+.media {
+  width: 70%;
+  animation: css 6s;
+}
+@keyframes css {
+  0% {
+    width: 5%;
+    background-color: #f9bcca;
+  }
+  100% {
+    width: 70%;
+    background-color: #ef476f;
+  }
+}
+.js,
+.ts {
+  width: 30%;
+  animation: js-ts 6s;
+}
+@keyframes js-ts {
+  0% {
+    width: 5%;
+    background-color: #f9bcca;
+  }
+  100% {
+    width: 30%;
+    background-color: #ef476f;
+  }
+}
+.sass {
+  width: 50%;
+  animation: sass 6s;
+}
+@keyframes sass {
+  0% {
+    width: 5%;
+    background-color: #f9bcca;
+  }
+  100% {
+    width: 50%;
+    background-color: #ef476f;
+  }
+}
+.seo {
+  width: 60%;
+  animation: seo 6s;
+}
+@keyframes seo {
+  0% {
+    width: 5%;
+    background-color: #f9bcca;
+  }
+  100% {
+    width: 60%;
+    background-color: #ef476f;
+  }
+}
+
+.works-back {
+  position: absolute;
+  z-index: -1;
+  background-attachment: fixed;
+
+  width: 100%;
+  min-height: 125vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  background-image: url("../../asset/work.png");
+}
+.main-works {
+  min-height: 125vh;
+}
+.main-works h1 {
+  padding: 10% 0% 0% 0%;
+}
+.main-works .works:nth-child(2) {
+}
+.works {
+}
+.project-works h4 {
+  margin-top: 20px;
+  font-size: 20px;
+  color: black;
+}
+.project-works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.child-project-works {
+  border-radius: 12px;
+  overflow: hidden;
+  width: 190px;
+  height: 200px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.child-project-works img {
+  object-fit: cover;
+  width: 190px;
+  height: 200px;
+  background-color: #e8e7e7;
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+}
+.child-project-works:hover {
+  transition: all 1s;
+  transform: translateY(-10px);
+}
+.child-project-works:hover img {
+  transform: scale(1.11);
+}
+
+@media screen and (max-width: 576px) {
+  .project-works h4 {
+    margin-top: 10px !important;
+  }
+
+  .works-back {
+  }
+  .parent-form {
+  }
+  .navbar,
+  .offcanvas-header {
+    height: 65px;
+  }
+  .navbar img {
+    width: 50px !important;
+  }
+  .main-img {
+    height: 80vh;
+  }
+  .about img {
+    width: 250px;
+  }
+  .main-project-phase h1 {
+    padding: 80px 0px 0px 0px !important;
+  }
+  .parent-skill-set h1 {
+    padding: 70px 0px 0px 0px !important;
+  }
+  .works h1 {
+    padding: 60px 0px 0px 0px;
+  }
+
+  .child-project-works {
+    width: 130px;
+    height: 150px;
+  }
+  .child-project-works img {
+    width: 130px;
+    height: 150px;
+  }
+  .project-works h4 {
+    font-size: 15px;
+  }
+  .skill-set-content {
+    text-align: center;
+  }
+}
+
+.parent-form {
+  text-align: center;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.parent-form p {
+  color: #575757;
+}
+.main-input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main-input div {
+  margin: 10px 0px;
+}
+.main-input div input,
+.main-input div textarea {
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid rgb(170, 170, 170);
+  padding: 8px;
+}
+.main-input div textarea {
+  height: 130px;
+}
