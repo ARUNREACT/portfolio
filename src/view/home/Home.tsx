@@ -10,13 +10,24 @@ export function Dashboard() {
       <Header />
       <div>
         <div className="main-img" id="home">
-          <div className="text mt-5 pt-5 col-12 col-sm-7 col-md-6 mx-auto">
-            <h2>Hi!</h2>
-            <h1>I am Arun</h1>
-            <p className="mb-3">Fronted Web Developer</p>
+          <div
+            data-aos="zoom-in"
+            className="text mt-5 pt-5 col-12 col-sm-7 col-md-6 mx-auto"
+          >
+            <h2 data-aos="slide-right" data-aos-duration="1000">
+              Hi!
+            </h2>
+            <h1 data-aos="slide-right" data-aos-duration="2000">
+              I am Arun
+            </h1>
+            <p data-aos="slide-right" data-aos-duration="3000" className="mb-3">
+              Fronted Web Developer
+            </p>
 
             <a href="#work">
-              <button>Visit my works</button>
+              <button data-aos="slide-right" data-aos-duration="4000">
+                Visit my works
+              </button>
             </a>
           </div>
         </div>
@@ -24,28 +35,29 @@ export function Dashboard() {
         <div className="about py-5" id="about">
           <div className="col-12 col-md-5 d-flex justify-content-center">
             <img
+              data-aos="zoom-in-up"
               className="img-fluid py-4"
               src={require("../../asset/profile.png")}
               alt=""
             />
           </div>
           <div className="col-12 col-md-6 col-lg-5">
-            <h5>Who AM I ?</h5>
-            <h1>About Me</h1>
-            <p>
+            <h5 data-aos="slide-up">Who AM I ?</h5>
+            <h1 data-aos="slide-up">About Me</h1>
+            <p data-aos="slide-up">
               <span>➥</span> As a React.js frontend developer, I specialize in
               crafting dynamic and engaging user experiences. From building
               responsive interfaces to optimizing performance, I'm dedicated to
               delivering high-quality code that exceeds expectations.
             </p>
-            <p>
+            <p data-aos="slide-up">
               <span>➥</span> My approach to development is simple: put the user
               first. By prioritizing user needs and preferences, I create
               designs that are both beautiful and functional. I'm always
               exploring new technologies and design patterns to stay ahead of
               the curve.
             </p>
-            <p className="pb-4">
+            <p data-aos="slide-up" className="pb-4">
               <span>➥</span> If you're looking for a passionate and innovative
               frontend developer, I'm your guy. Let's connect with me
               <a
@@ -57,15 +69,16 @@ export function Dashboard() {
               and bring your project to life!
             </p>
             <a
-              className="mt-5 cv"
+              data-aos="zoom-in"
+              className="mt-3 cv d-none d-sm-block"
               href={require("../../asset/Arun Kumar React JS Resume.pdf")}
-              // download
-              download="optional-value"
+              download
             >
               <button>Download CV</button>
             </a>
             <a
-              className="mt-5 cv"
+              data-aos="zoom-in"
+              className="mt-3 cv d-block d-sm-none"
               href={require("../../asset/Arun Kumar React JS Resume.b095d5a53456f2651402 (1).png")}
               download
             >
@@ -77,15 +90,18 @@ export function Dashboard() {
         <div className="main-project-phase " id="project-phase">
           <div className="project-back"></div>
           <div className="mainss text-center">
-            <h1 className="project-phase-h1 pt-4 ">Project Phase</h1>
-            <h5 className="col-sm-10 col-12 mx-auto">
+            <h1 data-aos="slide-right" className="project-phase-h1 pt-4 ">
+              Project Phase
+            </h1>
+            <h5 data-aos="zoom-in" className="col-sm-10 col-12 mx-auto">
               From ideation to creation, each phase is a step towards achieving
               your digital dreams.
             </h5>
 
             <div className="project-phase mx-auto my-lg-5 my-3 py-lg-5 py-3">
-              <div className="project-phase-child ">
+              <div data-aos="slide-right" className="project-phase-child ">
                 <img
+                  data-aos="zoom-in-down"
                   src="https://cdn3d.iconscout.com/3d/premium/thumb/graphic-design-6332596-5220374.png"
                   className="project-phase-img"
                 ></img>
@@ -98,8 +114,9 @@ export function Dashboard() {
                 alt=""
               />
 
-              <div className="project-phase-child">
+              <div data-aos="slide-right" className="project-phase-child">
                 <img
+                  data-aos="zoom-in-down"
                   src="https://cdn3d.iconscout.com/3d/premium/thumb/web-development-5617617-4674328.png"
                   className="project-phase-img"
                 ></img>
@@ -112,8 +129,9 @@ export function Dashboard() {
                 alt=""
               />
 
-              <div className="project-phase-child">
+              <div data-aos="slide-right" className="project-phase-child">
                 <img
+                  data-aos="zoom-in-down"
                   src="https://cdn3d.iconscout.com/3d/premium/thumb/code-bug-8184687-6546967.png"
                   className="project-phase-img"
                 ></img>
@@ -124,12 +142,14 @@ export function Dashboard() {
         </div>
 
         <div className="parent-skill-set" id="skill">
-          <h1 className="text-center">My Skills</h1>
-          <p className="text-center text-white">
+          <h1 className="text-center" data-aos="slide-right">
+            My Skills
+          </h1>
+          <p data-aos="slide-up" className="text-center text-white">
             I Like To Craft Beautiful And Scalable Web Products
           </p>
           <div className="py-sm-5 py-2 skill-set d-flex flex-wrap justify-content-center">
-            <div className="skill-set-content col-12 col-sm-9 col-md-6 col-lg-5 text-white d-flex flex-column justify-content-cent">
+            <div className="skill-set-content col-12 col-sm-9 col-md-6 col-lg-5 text-white d-flex flex-column">
               <Progresscontent
                 img={require("../../asset/p1.png")}
                 h5={`Design + Development`}
@@ -149,7 +169,7 @@ export function Dashboard() {
               />
             </div>
 
-            <div className="col-12 col-md-5  parent-progress">
+            <div className="col-12 col-md-5  parent-progress ">
               <Progress skill={"html"} p1={`HTML`} p2={`80%`} />
               <Progress skill={"css"} p1={`CSS`} p2={`70%`} />
               <Progress skill={"bootstrap"} p1={`Bootstrap`} p2={`80%`} />
@@ -166,9 +186,13 @@ export function Dashboard() {
           <div className="works-back"></div>
 
           <div className="col-lg-6 col-12 mx-auto works p-0">
-            <h1 className="text-center pb-3">My Works</h1>
+            <h1 data-aos="slide-right" className="text-center pb-3">
+              My Works
+            </h1>
 
-            <h2 className="text-center">Client projects</h2>
+            <h2 data-aos="slide-up" className="text-center">
+              Client projects
+            </h2>
             <div className="project-works text-center">
               <Project
                 to={"https://www.paype.co.in/"}
@@ -184,7 +208,9 @@ export function Dashboard() {
           </div>
 
           <div className="col-lg-12 col-xl-10 works p-0 col-12 mx-auto">
-            <h2 className="text-center py-3">White Label's</h2>
+            <h2 data-aos="slide-up" className="text-center py-3">
+              White Label's
+            </h2>
             <div className="project-works text-center">
               <Project
                 to={"https://main.d3k8exd9ibd63g.amplifyapp.com/"}
@@ -216,9 +242,11 @@ export function Dashboard() {
         </div>
 
         <div className="co mb-3 l-12 p-0 parent-form" id="contact">
-          <div className="col-lg-9 col-xl-7 bg-dangr  mx-auto mt-sm-5">
-            <p className="m-2">How can you communicate?</p>
-            <h2>Contact Me</h2>
+          <div className="col-lg-9 col-xl-7 p-0  mx-auto mt-sm-5">
+            <p data-aos="slide-up" className="m-2">
+              How can you communicate?
+            </p>
+            <h2 data-aos="slide-right">Contact Me</h2>
             <form
               className="mt-3"
               action="mailto:convey2arunk@gmail.com"
@@ -226,7 +254,7 @@ export function Dashboard() {
               encType="text/plain"
             >
               <div className="main-input p-0 col-md-11 mx-auto ">
-                <div className="col-sm-6">
+                <div className="col-sm-6" data-aos="slide-up">
                   <input
                     className="col-12"
                     type="text"
@@ -236,7 +264,7 @@ export function Dashboard() {
                     required
                   />
                 </div>
-                <div className="col-sm-6">
+                <div className="col-sm-6" data-aos="slide-up">
                   <input
                     className="col-12"
                     type="mail"
@@ -246,7 +274,7 @@ export function Dashboard() {
                     required
                   />
                 </div>
-                <div className="col-12">
+                <div className="col-12" data-aos="slide-up">
                   <textarea
                     className="col-12"
                     name="text"
@@ -256,7 +284,7 @@ export function Dashboard() {
                   />
                 </div>
               </div>
-              <div className="col-12 bg-inf p-4 mailsend">
+              <div className="col-12 bg-inf p-4 mailsend" data-aos="slide-up">
                 <input
                   className="mailbtn"
                   type="submit"

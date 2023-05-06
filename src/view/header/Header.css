@@ -37,9 +37,10 @@
 
 .navbar-nav {
   display: flex;
-  width: 100%;
+  width: 93%;
   justify-content: space-evenly;
   align-items: center;
+  /* background-color: aqua; */
 }
 
 .navbar-nav .nav-link {

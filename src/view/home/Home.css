@@ -16,8 +16,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;700&family=Roboto&display=swap");
 
 .text h1,
-.text h2,
-.parent-form h2 {
+.text h2 {
   font-family: "Baloo Paaji 2", cursive;
   font-size: calc(3rem + 3vw);
   font-weight: 900;
@@ -215,10 +214,10 @@
 }
 @media screen and (max-width: 980px) {
   .main-works {
-    min-height: 160vh !important;
+    min-height: 165vh !important;
   }
   .works-back {
-    min-height: 160vh !important;
+    min-height: 165vh !important;
   }
 }
 

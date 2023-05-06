@@ -35,7 +35,7 @@ export function Header() {
   };
 
   return (
-    <div className="header fixed-top">
+    <div className="header fixed-top" data-aos="zoom-in">
       <nav className="navbar navbar-expand-md  p-0 ">
         <div className="p-2 col-lg-10 mx-auto d-flex align-items-center justify-content-between">
           <a className="head-logo " href="#home">
