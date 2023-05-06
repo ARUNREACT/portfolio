@@ -65,21 +65,20 @@
     background: none;
     border: none;
     justify-content: end;
-    width: 295px;
+    width: 100%;
     height: 100vh;
     background: linear-gradient(
       to top,
       var(--primary-color),
       var(--third-color)
     );
-    transition: 0.5s all;
+    transition: 1s all !important;
   }
 
   .offcanvas-start-md {
-    /* transition: 1.3s all; */
+    /* transition: 5s all !important; */
     top: 0;
     left: 0;
-    /* border-right: 1px solid #e100ff7c; */
     transform: translateX(-100%);
   }
 

@@ -74,11 +74,11 @@ export function Header() {
               </a>
               <a
                 href="javascript:void(0) "
-                className="text-reset p-0 mb-3"
+                className="text-reset p-0 mb-1"
                 onClick={() => setOffCanvasOpen(false)}
                 aria-label="close"
               >
-                <i className="fs-1 text-light">
+                <i className="fs-1 text-light ">
                   <XCircleFill />
                 </i>
               </a>

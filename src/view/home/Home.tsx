@@ -208,7 +208,7 @@ export function Dashboard() {
           </div>
 
           <div className="col-lg-12 col-xl-10 works p-0 col-12 mx-auto">
-            <h2 data-aos="slide-up" className="text-center py-3">
+            <h2 data-aos="slide-up" className="text-center mt-3">
               White Label's
             </h2>
             <div className="project-works text-center">
