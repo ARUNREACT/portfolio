@@ -22,7 +22,7 @@ export function Dashboard() {
         </div>
 
         <div className="about py-5" id="about">
-          <div className="col-12 col-md-5">
+          <div className="col-12 col-md-5 d-flex justify-content-center">
             <img
               className="img-fluid py-4"
               src={require("../../asset/profile.png")}

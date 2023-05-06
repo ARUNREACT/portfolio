@@ -78,7 +78,7 @@
     /* transition: 1.3s all; */
     top: 0;
     left: 0;
-    border-right: 1px solid #e100ff7c;
+    /* border-right: 1px solid #e100ff7c; */
     transform: translateX(-100%);
   }
 
