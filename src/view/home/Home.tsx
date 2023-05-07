@@ -182,11 +182,11 @@ export function Dashboard() {
           </div>
         </div>
 
-        <div className="main-works p-0" id="work">
+        <div className="main-works " id="work">
           <div className="works-back"></div>
 
-          <div className="col-lg-6 col-12 mx-auto works p-0">
-            <h1 data-aos="slide-right" className="text-center pb-3">
+          <div className="col-lg-6 col-12 mx-auto works p-0 py-sm-5 ">
+            <h1 data-aos="slide-right" className="text-center mt-sm-4">
               My Works
             </h1>
 
@@ -207,7 +207,7 @@ export function Dashboard() {
             </div>
           </div>
 
-          <div className="col-lg-12 col-xl-10 works p-0 col-12 mx-auto">
+          <div className="col-lg-12 col-xl-10 works p-0 pt-0 pb-sm-5 col-12 mx-auto">
             <h2 data-aos="slide-up" className="text-center mt-3">
               White Label's
             </h2>

@@ -115,21 +115,21 @@
 }
 /**************.project-phase*******************  */
 .main-project-phase {
-  min-height: 90vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .project-back {
   position: absolute;
   z-index: -1;
   background-attachment: fixed;
   width: 100%;
-  min-height: 90vh;
+  min-height: 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center right;
   background-size: cover;
-
   opacity: 0.5;
   background-image: url(https://slidescorner.com/wp-content/uploads/2022/09/01-Heidi-Pastel-Abstract-Organic-Shapes-Background-by-SlidesCorner.jpg);
 }
@@ -145,7 +145,6 @@
 }
 
 .project-phase-child {
-  margin-top: 25px;
   min-width: 200px;
   height: 150px;
   border-radius: 25px;
@@ -171,7 +170,7 @@
   margin-top: -50px;
 }
 .project-phase .arrow {
-  width: 130px;
+  width: 100px;
   padding: 10px;
   animation: arrow 3s infinite;
 }
@@ -185,10 +184,6 @@
   }
 }
 @media screen and (max-width: 832px) {
-  .project-back {
-    background-position: center right;
-    min-height: 170vh;
-  }
   .works-back {
   }
   .project-phase {
@@ -214,10 +209,8 @@
 }
 @media screen and (max-width: 980px) {
   .main-works {
-    min-height: 165vh !important;
   }
   .works-back {
-    min-height: 165vh !important;
   }
 }
 
@@ -363,35 +356,27 @@
   position: absolute;
   z-index: -1;
   background-attachment: fixed;
-
   width: 100%;
-  min-height: 125vh;
+  min-height: 102%;
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.5;
   background-image: url("../../asset/work.png");
 }
 .main-works {
-  min-height: 125vh;
-}
-.main-works h1 {
-  padding: 10% 0% 0% 0%;
-}
-.main-works .works:nth-child(2) {
-}
-.works {
+  height: 100%;
+  position: relative;
 }
 
 .project-works h4 {
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 17px !important;
   color: black;
 }
 .project-works {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 0px -10px;
 }
 
 .child-project-works {
@@ -423,11 +408,6 @@
   .project-works h4 {
     margin-top: 10px !important;
   }
-
-  .works-back {
-  }
-  .parent-form {
-  }
   .navbar,
   .offcanvas-header {
     height: 65px;
@@ -452,16 +432,14 @@
   }
 
   .child-project-works {
-    width: 130px;
-    height: 150px;
+    width: 150px;
+    height: 170px;
   }
   .child-project-works img {
-    width: 130px;
-    height: 150px;
+    width: 150px;
+    height: 170px;
   }
-  .project-works h4 {
-    font-size: 15px;
-  }
+
   .skill-set-content {
     text-align: center;
   }
